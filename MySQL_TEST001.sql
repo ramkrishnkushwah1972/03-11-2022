@@ -76,20 +76,23 @@ SELECT CONCAT(first_name,' ',last_name) AS COMPLETE_NAME FROM worker;
 SELECT *FROM worker 
 ORDER BY first_name;
 
-/*	Q-6. Write an SQL query to print all Worker details from the Worker table order 
-	by FIRST_NAME Ascending and DEPARTMENT Descending.
+/*	
+Q-6. Write an SQL query to print all Worker details from the Worker table order 
+by FIRST_NAME Ascending and DEPARTMENT Descending.
 */
 SELECT *FROM worker 
 ORDER BY first_name ASC, department DESC;
 
-/* Q-7. Write an SQL query to print details for Workers with the first name as 
-	“Vipul” and “Satish” from Worker table.
+/* 
+Q-7. Write an SQL query to print details for Workers with the first name as 
+“Vipul” and “Satish” from Worker table.
 */
 SELECT *FROM worker 
 WHERE first_name in ('Vipul','Satish');
 
-/*	Q-8. Write an SQL query to print details of workers excluding first names,
-	“Vipul” and “Satish” from Worker table.
+/*	
+Q-8. Write an SQL query to print details of workers excluding first names,
+“Vipul” and “Satish” from Worker table.
 */
 SELECT *FROM worker 
 WHERE first_name NOT IN ('Vipul','Satish');
@@ -106,8 +109,9 @@ WHERE first_name LIKE '%a%';
 SELECT *FROM worker 
 WHERE first_name LIKE '%a';
 
-/* Q-12. Write an SQL query to print details of the Workers whose FIRST_NAME
-	ends with ‘h’ and contains six alphabets.
+/* 
+Q-12. Write an SQL query to print details of the Workers whose FIRST_NAME
+ends with ‘h’ and contains six alphabets.
 */
 SELECT *FROM worker 
 WHERE first_name LIKE '%______h';
